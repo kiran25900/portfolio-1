@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture | Software Engineer & UX Architect</title>
+    <meta name="description"
+        content="Translating complex logic into seamless design. Portfolio of a Software Engineer & UX Architect.">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Typography tokens: Modern Pop font (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor Nodes -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <main class="scroll-container">
+        <!-- App Bar Header -->
+        <header class="app-bar fade-up delay-1">
+            <a href="#hero" class="nav-icon magnetic-link" aria-label="Home">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 2 22 22 22"></polygon>
+                </svg>
+            </a>
+            <a href="#works" class="nav-icon magnetic-link" aria-label="Works">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="14" width="7" height="7"></rect>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+            </a>
+            <a href="#capabilities" class="nav-icon magnetic-link" aria-label="Capabilities">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+            </a>
+            <a href="#terminus" class="nav-icon magnetic-link" aria-label="Profile">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+            </a>
+        </header>
+
+        <!-- Hero / Index Section -->
+        <section class="section hero" id="hero">
+            <div class="hero-frame">
+                <div class="container grid-12">
+                    <div class="hero-content">
+                        <h1 class="heading-fluid fade-up">Translating complex logic into seamless design.</h1>
+                        <p class="sub-headline fade-up delay-1">Software Engineer & UX Architect specializing in secure,
+                            scalable ecosystems.</p>
+                        <a href="#works" class="magnetic-btn fade-up delay-2">
+                            <span class="btn-text">View the Architecture</span>
+                            <svg class="btn-stroke" viewBox="0 0 200 50" preserveAspectRatio="none">
+                                <path d="M0,45 L200,45" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected Works / Curated Architectures -->
+        <section class="section works stack-section" id="works">
+            <div class="container grid-12">
+                <div class="works-header">
+                    <h2 class="heading-secondary fade-up">Curated Architectures</h2>
+                    <div class="works-nav fade-up delay-1">
+                        <button class="nav-arrow magnetic-link" id="prev-project" aria-label="Previous Project">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="19" y1="12" x2="5" y2="12"></line>
+                                <polyline points="12 19 5 12 12 5"></polyline>
+                            </svg>
+                        </button>
+                        <button class="nav-arrow magnetic-link" id="next-project" aria-label="Next Project">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Horizontal Scrolling Ticker -->
+            <div class="stack-ticker-wrapper fade-up delay-1">
+                <div class="stack-ticker" id="stack-ticker">
+                    <!-- Project 01 -->
+                    <a href="#" class="stack-node" data-project="01">
+                        <div class="app-icon-placeholder">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                </path>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                        <div class="matrix-core">
+                            <h3 class="matrix-title">Careflow Provider</h3>
+                            <p class="matrix-thesis">Caregiver Shift & Task Management mobile app.</p>
+                        </div>
+                        <div class="matrix-stack">Flutter, Node.js</div>
+                    </a>
+
+                    <!-- Project 02 -->
+                    <a href="#" class="stack-node" data-project="02">
+                        <div class="app-icon-placeholder">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <div class="matrix-core">
+                            <h3 class="matrix-title">Careflow Family</h3>
+                            <p class="matrix-thesis">Patient Monitoring & Care Coordination portal.</p>
+                        </div>
+                        <div class="matrix-stack">React.js, Express</div>
+                    </a>
+
+                    <!-- Project 03 -->
+                    <a href="#" class="stack-node" data-project="03">
+                        <div class="app-icon-placeholder">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                </path>
+                                <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
+                                <polyline points="7.5 19.79 7.5 14.6 3 12"></polyline>
+                                <polyline points="21 12 16.5 14.6 16.5 19.79"></polyline>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                        <div class="matrix-core">
+                            <h3 class="matrix-title">Careflow Command</h3>
+                            <p class="matrix-thesis">Agency Operations & Dispatch Dashboard.</p>
+                        </div>
+                        <div class="matrix-stack">MERN Desktop</div>
+                    </a>
+
+                    <!-- Project 04 -->
+                    <a href="#" class="stack-node" data-project="04">
+                        <div class="app-icon-placeholder">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                        <div class="matrix-core">
+                            <h3 class="matrix-title">Quantitative Trading Engine</h3>
+                            <p class="matrix-thesis">Automated Python stock trading system handling dynamic capital
+                                allocation.</p>
+                        </div>
+                        <div class="matrix-stack">Python, Financial APIs</div>
+                    </a>
+
+                    <!-- Project 05 -->
+                    <a href="#" class="stack-node" data-project="05">
+                        <div class="app-icon-placeholder">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                        </div>
+                        <div class="matrix-core">
+                            <h3 class="matrix-title">Global E-Commerce Storefront</h3>
+                            <p class="matrix-thesis">International Dropshipping Platform optimized for high-conversion.
+                            </p>
+                        </div>
+                        <div class="matrix-stack">Shopify, Web Design</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Capabilities: 4-Layer Architecture Taxonomy -->
+        <section class="section capabilities" id="capabilities">
+            <div class="container grid-12">
+                <div class="cap-header">
+                    <h2 class="heading-secondary fade-up">Tools & Stack</h2>
+                </div>
+
+                <!-- Unified Capability Grid -->
+                <div class="capability-grid fade-up delay-1">
+                    <div class="capability-node" aria-label="Next.js">
+                        <div class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 21V3l11 15V3"></path>
+                                <circle cx="12" cy="12" r="10"></circle>
+                            </svg></div>
+                        <span>Next.js</span>
+                    </div>
+                    <div class="capability-node" aria-label="Flutter">
+                        <div class="node-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%"
+                                height="100%" fill="currentColor">
+                                <path
+                                    d="M14.314 0L2.3 12 6 15.7 21.684.012h-7.357L14.314 0zm.014 11.072l-6.471 6.457 6.47 6.47H21.7l-6.46-6.468 6.46-6.46h-7.371z" />
+                            </svg></div>
+                        <span>Flutter</span>
+                    </div>
+                    <div class="capability-node" aria-label="Modern CSS">
+                        <div class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4l3.5 14.5L12 21l4.5-2.5L20 4H4z"></path>
+                                <path d="M16.5 8.5H8.5l.5 4h6.5l-.5 4.5-3 1.5-3-1.5-.25-2.5"></path>
+                            </svg></div>
+                        <span>Modern CSS</span>
+                    </div>
+                    <div class="capability-node" aria-label="UI/UX Architecture">
+                        <div class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5"></path>
+                                <path d="M2 12l10 5 10-5"></path>
+                            </svg></div>
+                        <span>UI/UX</span>
+                    </div>
+
+                    <div class="capability-node" aria-label="Node.js & Express.js">
+                        <div class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                <path d="M8 11l3 3 5-5"></path>
+                            </svg></div>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="capability-node" aria-label="Python">
+                        <div class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg></div>
+                        <span>Python</span>
+                    </div>
+                    <div class="capability-node" aria-label="MongoDB">
+                        <div class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            </svg></div>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="capability-node" aria-label="SQL">
+                        <div class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="3" y1="9" x2="21" y2="9"></line>
+                                <line x1="9" y1="21" x2="9" y2="9"></line>
+                            </svg></div>
+                        <span>SQL</span>
+                    </div>
+                    <div class="capability-node" aria-label="RESTful APIs">
+                        <div class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="20" x2="18" y2="10"></line>
+                                <line x1="12" y1="20" x2="12" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="14"></line>
+                            </svg></div>
+                        <span>APIs</span>
+                    </div>
+
+                    <div class="capability-node" aria-label="Network Protocols">
+                        <div class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                </path>
+                            </svg></div>
+                        <span>Networks</span>
+                    </div>
+                    <div class="capability-node" aria-label="Architecture Fundamentals">
+                        <div class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                            </svg></div>
+                        <span>Architecture</span>
+                    </div>
+                    <div class="capability-node" aria-label="Application Security">
+                        <div class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg></div>
+                        <span>Security</span>
+                    </div>
+
+                    <div class="capability-node" aria-label="Shopify">
+                        <div class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <path d="M16 10a4 4 0 0 1-8 0"></path>
+                            </svg></div>
+                        <span>Shopify</span>
+                    </div>
+                    <div class="capability-node" aria-label="Generative AI Workflows">
+                        <div class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                </polygon>
+                            </svg></div>
+                        <span>Gen:AI</span>
+                    </div>
+                    <div class="capability-node" aria-label="Financial Automation">
+                        <div class="node-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg></div>
+                        <span>Finance</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profile / Terminus -->
+        <footer class="section terminus profile-section" id="terminus">
+            <div class="container grid-12">
+                <div class="profile-content fade-up">
+                    <div class="profile-avatar-container">
+                        <div class="avatar-glow"></div>
+                        <img src="profile.jpg" alt="Profile Avatar" class="profile-avatar">
+                    </div>
+
+                    <div class="profile-info fade-up delay-1">
+                        <h2 class="heading-tertiary">Kiran Das P.</h2>
+                        <p style="color: rgba(234, 234, 234, 0.6); margin-bottom: var(--space-4);">Software Engineer •
+                            Kannur, Kerala</p>
+
+                        <h3 style="font-size: 1rem; color: var(--color-accent); margin-bottom: var(--space-2);">Selected
+                            Experience</h3>
+                        <ul class="experience-list">
+                            <li><span class="exp-year">2025-Present</span> <span class="exp-role">Freelance Software
+                                    Developer</span></li>
+                            <li><span class="exp-year">2023-2024</span> <span class="exp-role">Software Support
+                                    Engineer</span></li>
+                            <li><span class="exp-year">2021-2022</span> <span class="exp-role">Site Supervisor @ Delta
+                                    Interiors</span></li>
+                        </ul>
+
+                        <h3
+                            style="font-size: 1rem; color: var(--color-accent); margin-top: var(--space-4); margin-bottom: var(--space-2);">
+                            Education</h3>
+                        <ul class="experience-list">
+                            <li><span class="exp-year">In Progress</span> <span class="exp-role">Cybersecurity @ Cisco
+                                    Academy</span></li>
+                            <li><span class="exp-year">2019-2022</span> <span class="exp-role">BSc Computer
+                                    Science</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="profile-contact fade-up delay-2">
+                        <p>Available for strategic technical partnerships.</p>
+                        <ul class="footer-links">
+                            <li><a href="https://github.com/kiran25900" target="_blank" rel="noopener noreferrer"
+                                    class="magnetic-link">GitHub</a></li>
+                            <li><a href="mailto:kiranbodhi111@gmail.com" class="magnetic-link obf-mail"
+                                    data-contact="moc.liamg@111ihdobnarik">Email</a></li>
+                            <li><a href="tel:+917593973033" class="magnetic-link">+91 7593973033</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Project Modal (Lightbox) -->
+    <div class="modal-overlay" id="project-modal">
+        <div class="modal-container">
+            <button class="modal-close magnetic-link" id="modal-close" aria-label="Close Project">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal-content">
+                <!-- Injected via JavaScript -->
+                <h2 class="modal-title" id="modal-title">Project Title</h2>
+                <div class="modal-tags" id="modal-tags">Tags</div>
+                <div class="modal-visuals">
+                    <!-- Mock screenshot placeholder -->
+                    <div class="modal-image-placeholder" id="modal-image"></div>
+                </div>
+                <p class="modal-description" id="modal-desc">Detailed physical description of the project architecture.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
