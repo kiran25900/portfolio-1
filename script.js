@@ -199,7 +199,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const modalTitle = document.getElementById("modal-title");
     const modalTags = document.getElementById("modal-tags");
     const modalDesc = document.getElementById("modal-desc");
-    const projectTriggers = document.querySelectorAll(".project-matrix");
+    const projectTriggers = document.querySelectorAll(".stack-node");
+    const modalVisuals = document.getElementById("modal-image");
 
     // Open Modal
     projectTriggers.forEach(trigger => {
@@ -212,7 +213,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Populate Modal Data
                 modalTitle.textContent = data.title;
                 modalTags.textContent = data.tags;
-                modalDesc.textContent = data.desc;
+                modalDesc.innerHTML = data.desc;
+
+                // Brewing notice — mockups in progress
+                modalVisuals.innerHTML = `
+                    <div style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="rgba(122,139,153,0.7)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 8h1a4 4 0 0 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/>
+                        </svg>
+                        <p style="font-family:var(--font-body);font-size:0.95rem;color:rgba(234,234,234,0.4);letter-spacing:0.06em;text-transform:uppercase;">Brewing mockups&hellip;</p>
+                    </div>`;
 
                 // Show Modal
                 modalOverlay.classList.add("active");
